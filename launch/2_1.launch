@@ -3,3 +3,4 @@
     <node pkg="rqt_reconfigure" type="rqt_reconfigure" name="rqt_reconfigure" />
     <node pkg="hausuebung2_semjon_eschweiler" type="tb3_nav_node" name="tb3_nav" output="screen" />
 </launch>
+<!-- this is a comment -->
