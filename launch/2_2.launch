@@ -1,0 +1,21 @@
+<launch>
+    <include file="$(find hausuebung2_semjon_eschweiler)/launch/map.launch" />
+    <include file="$(find turtlebot3_gazebo)/launch/turtlebot3_gazebo_rviz.launch"/>
+    <node pkg="hausuebung2_semjon_eschweiler" type="tb3_nav_2_2_node" name="tb3_nav_2_2" output="screen" required="true"/>
+    <!-- <node type="rviz" name="rviz" pkg="rviz" args="-d $(find package_name)/rviz/config_file.rviz" /> -->
+    <param name="x_1" type="double" value="4" />
+    <param name="y_1" type="double" value="0" />
+    <param name="th_dg_1" type="double" value="0" />
+
+    <param name="x_2" type="double" value="6" />
+    <param name="y_2" type="double" value="-2" />
+    <param name="th_dg_2" type="double" value="-90" />
+
+    <param name="x_3" type="double" value="4" />
+    <param name="y_3" type="double" value="-4" />
+    <param name="th_dg_3" type="double" value="-179" />
+
+    <param name="x_4" type="double" value="2" />
+    <param name="y_4" type="double" value="-2" />
+    <param name="th_dg_4" type="double" value="90" />
+</launch>
